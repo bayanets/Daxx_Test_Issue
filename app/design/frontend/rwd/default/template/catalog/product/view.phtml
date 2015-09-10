@@ -64,6 +64,11 @@
                     <?php echo $this->getTierPriceHtml() ?>
                 </div>
 
+                <div class="product-mpn">
+                    <p><?php echo Mage::helper('yanmalinovsky_googlempn')->getGoogleMpnTitle() ?>:
+                        <span class="product-mpn-style"><?php echo $_product->getGoogleMpn() ?></span></p>
+                </div>
+
                 <div class="extra-info">
                     <?php echo $this->getReviewsSummaryHtml($_product, 'default', false)?>
                     <?php echo $this->getChildHtml('product_type_availability'); ?>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+/**
+* GoogleMpn related module
+*
+* @category    YanMalinovsky
+* @package     YanMalinovsky_GoogleMpn
+* @copyright   Copyright (c) 2015 <yan.malinovsky@gmail.com>
+* @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+*/
+-->
+<config>
+    <modules>
+        <YanMalinovsky_GoogleMpn>
+            <version>0.1.0</version>
+        </YanMalinovsky_GoogleMpn>
+    </modules>
+    <global>
+        <blocks>
+            <yanmalinovsky_googlempn>
+                <class>YanMalinovsky_GoogleMpn_Block</class>
+            </yanmalinovsky_googlempn>
+        </blocks>
+        <helpers>
+            <yanmalinovsky_googlempn>
+                <class>YanMalinovsky_GoogleMpn_Helper</class>
+            </yanmalinovsky_googlempn>
+        </helpers>
+        <resources>
+            <yanmalinovsky_googlempn_setup>
+                <setup>
+                    <module>YanMalinovsky_GoogleMpn</module>
+                </setup>
+            </yanmalinovsky_googlempn_setup>
+        </resources>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <yanmalinovsky_googlempn>
+                    <file>yanmalinovsky_googlempn.xml</file>
+                </yanmalinovsky_googlempn>
+            </updates>
+        </layout>
+    </frontend>
+</config>
